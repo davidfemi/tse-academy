@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ElBron Jaimes - Profile</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <main>
+            <div class="profile-header">
+                <h1>ElBron Jaimes</h1>
+                <h2>Engineering Support Tech</h2>
+            </div>
+
+            <div class="profile-content">
+                <div class="profile-image">
+                    <img id="profileImage" src="images/lebron1.jpg" alt="profile" />
+            
+                    <div class="profile-stats">
+                        <div class="stat">
+                            <span class="stat-label">Experience:</span>
+                            <span class="stat-value">21 years</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Specialty:</span>
+                            <span class="stat-value">Playmaking, Leadership, Versatile Scorer </span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Location:</span>
+                            <span class="stat-value">Los Angeles, CA</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-label">Tools:</span>
+                            <span class="stat-value">Right Hand, Left Hand, Feet</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="profile-details">
+                    <div class="section">
+                        <h3 class="section-title">Achievements</h3>
+                        <p>Youngest NBA Rookie of the Year</p>
+                        <p>4x NBA Champion</p>
+                        <p>2x Olympic Gold Medalist</p>
+                    </div>
+            
+                    <div class="section">
+                        <h3 class="section-title">TECHNOLOGIES</h3>
+                        <p>Experienced with modding Gameboys</p>
+                        <p>Professional in CTRL+C/CTRL+V frameworks</p>
+                        <p>Moderately skilled in hacking into the CIA's database</p>
+                    </div>
+            
+                    <div class="section">
+                        <h3 class="section-title">ABOUT ElBron</h3>
+                        <p>Wrote a thesis on the societal influences of the ancient arts of "boffa" and "dees" </p>
+                        <p>Can fight a gorilla by himself</p>
+                        <p>Invented the French language</p>
+                    </div>
+                </div>
+            </div>
+                    </main>
+    </div>
+    <script>
+        const images = [
+            "images/lebron1.jpg",
+            "images/lebron2.jpg",
+            "images/lebron3.jpg"
+        ];
+    
+        let currentImageIndex = 0;
+        
+        function changeImage() {
+            const img = document.getElementById("profileImage");
+
+    // Start fading out the image
+            img.style.opacity = 0;
+
+    // After the fade-out is complete, change the image source
+            setTimeout(() => {
+                currentImageIndex = (currentImageIndex + 1) % images.length;
+                img.src = images[currentImageIndex];
+
+        // Fade the image back in
+                img.style.opacity = 1;
+            }, 1000); // Timeout must match the CSS transition duration
+        }
+    
+        setInterval(changeImage, 6000);
+    </script>
+</body>
+</html>
