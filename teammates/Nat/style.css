@@ -1,0 +1,130 @@
+/* ========== RESET & BASE STYLES ========== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+    position: relative;
+    text-align: left;
+  }
+  
+  /* ========== BACKGROUND IMAGE WITH GRADIENT OVERLAY ========== */
+  /* OLD:
+  body {
+    background: url('imgs/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  */
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: 
+      linear-gradient(to bottom right, rgba(131, 128, 128, 0.9), rgba(6, 6, 6, 0.7)),
+      url('imgs/intercom_logot.png') no-repeat right center fixed;
+    background-size: cover;
+    z-index: -1;
+  }
+
+  body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: 
+      linear-gradient(to bottom right, rgba(207, 206, 206, 0.9), rgba(6, 6, 6, 0.7)),
+      url('imgs/intercom_logot.png') no-repeat right center fixed;
+    background-size: cover;
+    z-index: -1;
+  }
+  
+  
+  /* ========== TEXT COLORS ========== */
+  h1 {
+    color: #0a0dc2;
+    text-align: left;
+  }
+  
+  h2 {
+    color: #17aadb;
+    text-align: left;
+  }
+  
+  h3 {
+    color: #44a0a7;
+    text-decoration: solid;
+    text-decoration: underline rgb(11, 11, 11);
+    text-align: left;
+  }
+
+  p {
+    text-align: justify;
+  }
+  
+  /* ========== CONTAINER ========== */
+  .container {
+    max-width: 800px;
+    margin: 0;
+    padding: 20px;
+    background-color: transparent;
+    text-align: left;
+  }
+  
+  /* ========== PROFILE IMAGE ========== */
+  /* OLD:
+  .profile-content img {
+    width: 100%;
+  }
+  */
+  .profile-content img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 20px 0; /* Top and bottom margin only */
+  }
+  
+  .profile-content img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 20px 0; /* Top and bottom margin only */
+  }
+
+  /* ========== SECTIONS & STATS ========== */
+  .section {
+    margin-bottom: 30px;
+    text-align: left;
+  }
+  
+  .section-title {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    text-align: left;
+  }
+  
+  .stat-item {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  
+  /* ========== TEXT ALIGNMENT ========== */
+body, .container, h1, h2, h3, .section, .section-title, .stat-item {
+    text-align: left;
+  }
+  

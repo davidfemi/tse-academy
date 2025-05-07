@@ -17,6 +17,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
+
 }
 
 main {
@@ -28,14 +29,16 @@ main {
 /* Profile Header */
 .profile-header {
     margin-bottom: 20px;
+
 }
 
 .profile-header h1 {
     font-size: 3.5rem;
     font-weight: 700;
-    color: #00b050; /* Green color from reference */
+    color: #121214; /* Green color from reference */
     margin-bottom: 5px;
     line-height: 1.2;
+
 }
 
 .profile-header h3 {
@@ -43,6 +46,7 @@ main {
     font-weight: 400;
     color: #555;
     margin-bottom: 20px;
+
 }
 
 /* Profile Content */
@@ -50,6 +54,7 @@ main {
     display: grid;
     grid-template-columns: 300px 1fr;
     gap: 40px;
+
 }
 
 /* Profile Image */
@@ -75,12 +80,12 @@ main {
 }
 
 .section-title {
-    color: #00b050; /* Green color from reference */
+    color: #121214; /* Green color from reference */
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 15px;
     padding-bottom: 5px;
-    border-bottom: 2px solid #00b050;
+    border-bottom: 2px solid #121214;
     display: inline-block;
 }
 
@@ -104,7 +109,7 @@ main {
 
 .stat-label {
     font-weight: 600;
-    color: #00b050;
+    color: #121214;
     margin-right: 5px;
 }
 
